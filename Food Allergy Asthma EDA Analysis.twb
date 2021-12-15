@@ -1,0 +1,2679 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20201.20.0427.1803                               -->
+<workbook original-version='18.1' source-build='2020.1.3 (20201.20.0427.1803)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='food-allergy-analysis-Zenodo' inline='true' name='federated.1c73yi90ippcrv0zmobg20kutg9n' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='food-allergy-analysis-Zenodo' name='textscan.0qvgjx3005xw2l19qvmp40epuymi'>
+            <connection class='textscan' directory='C:/Users/gokul/Downloads' filename='food-allergy-analysis-Zenodo.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0qvgjx3005xw2l19qvmp40epuymi' name='food-allergy-analysis-Zenodo.csv' table='[food-allergy-analysis-Zenodo#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='SUBJECT_ID' ordinal='0' />
+            <column datatype='integer' name='BIRTH_YEAR' ordinal='1' />
+            <column datatype='string' name='GENDER_FACTOR' ordinal='2' />
+            <column datatype='string' name='RACE_FACTOR' ordinal='3' />
+            <column datatype='string' name='ETHNICITY_FACTOR' ordinal='4' />
+            <column datatype='string' name='PAYER_FACTOR' ordinal='5' />
+            <column datatype='boolean' name='ATOPIC_MARCH_COHORT' ordinal='6' />
+            <column datatype='real' name='AGE_START_YEARS' ordinal='7' />
+            <column datatype='real' name='AGE_END_YEARS' ordinal='8' />
+            <column datatype='real' name='SHELLFISH_ALG_START' ordinal='9' />
+            <column datatype='string' name='SHELLFISH_ALG_END' ordinal='10' />
+            <column datatype='real' name='FISH_ALG_START' ordinal='11' />
+            <column datatype='string' name='FISH_ALG_END' ordinal='12' />
+            <column datatype='real' name='MILK_ALG_START' ordinal='13' />
+            <column datatype='string' name='MILK_ALG_END' ordinal='14' />
+            <column datatype='real' name='SOY_ALG_START' ordinal='15' />
+            <column datatype='string' name='SOY_ALG_END' ordinal='16' />
+            <column datatype='real' name='EGG_ALG_START' ordinal='17' />
+            <column datatype='string' name='EGG_ALG_END' ordinal='18' />
+            <column datatype='real' name='WHEAT_ALG_START' ordinal='19' />
+            <column datatype='string' name='WHEAT_ALG_END' ordinal='20' />
+            <column datatype='real' name='PEANUT_ALG_START' ordinal='21' />
+            <column datatype='string' name='PEANUT_ALG_END' ordinal='22' />
+            <column datatype='real' name='SESAME_ALG_START' ordinal='23' />
+            <column datatype='string' name='SESAME_ALG_END' ordinal='24' />
+            <column datatype='real' name='TREENUT_ALG_START' ordinal='25' />
+            <column datatype='string' name='TREENUT_ALG_END' ordinal='26' />
+            <column datatype='real' name='WALNUT_ALG_START' ordinal='27' />
+            <column datatype='string' name='WALNUT_ALG_END' ordinal='28' />
+            <column datatype='real' name='PECAN_ALG_START' ordinal='29' />
+            <column datatype='string' name='PECAN_ALG_END' ordinal='30' />
+            <column datatype='real' name='PISTACH_ALG_START' ordinal='31' />
+            <column datatype='string' name='PISTACH_ALG_END' ordinal='32' />
+            <column datatype='real' name='ALMOND_ALG_START' ordinal='33' />
+            <column datatype='string' name='ALMOND_ALG_END' ordinal='34' />
+            <column datatype='string' name='BRAZIL_ALG_START' ordinal='35' />
+            <column datatype='string' name='BRAZIL_ALG_END' ordinal='36' />
+            <column datatype='real' name='HAZELNUT_ALG_START' ordinal='37' />
+            <column datatype='string' name='HAZELNUT_ALG_END' ordinal='38' />
+            <column datatype='real' name='CASHEW_ALG_START' ordinal='39' />
+            <column datatype='string' name='CASHEW_ALG_END' ordinal='40' />
+            <column datatype='string' name='ATOPIC_DERM_START' ordinal='41' />
+            <column datatype='string' name='ATOPIC_DERM_END' ordinal='42' />
+            <column datatype='string' name='ALLERGIC_RHINITIS_START' ordinal='43' />
+            <column datatype='string' name='ALLERGIC_RHINITIS_END' ordinal='44' />
+            <column datatype='string' name='ASTHMA_START' ordinal='45' />
+            <column datatype='string' name='ASTHMA_END' ordinal='46' />
+            <column datatype='string' name='FIRST_ASTHMARX' ordinal='47' />
+            <column datatype='string' name='LAST_ASTHMARX' ordinal='48' />
+            <column datatype='string' name='NUM_ASTHMARX' ordinal='49' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SUBJECT_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SUBJECT_ID]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>SUBJECT_ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BIRTH_YEAR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BIRTH_YEAR]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>BIRTH_YEAR</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GENDER_FACTOR</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GENDER_FACTOR]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>GENDER_FACTOR</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RACE_FACTOR</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RACE_FACTOR]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>RACE_FACTOR</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ETHNICITY_FACTOR</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ETHNICITY_FACTOR]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>ETHNICITY_FACTOR</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PAYER_FACTOR</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PAYER_FACTOR]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>PAYER_FACTOR</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ATOPIC_MARCH_COHORT</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[ATOPIC_MARCH_COHORT]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>ATOPIC_MARCH_COHORT</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AGE_START_YEARS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AGE_START_YEARS]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>AGE_START_YEARS</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AGE_END_YEARS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AGE_END_YEARS]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>AGE_END_YEARS</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SHELLFISH_ALG_START</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SHELLFISH_ALG_START]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>SHELLFISH_ALG_START</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SHELLFISH_ALG_END</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SHELLFISH_ALG_END]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>SHELLFISH_ALG_END</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FISH_ALG_START</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FISH_ALG_START]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>FISH_ALG_START</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FISH_ALG_END</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FISH_ALG_END]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>FISH_ALG_END</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MILK_ALG_START</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MILK_ALG_START]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>MILK_ALG_START</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MILK_ALG_END</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MILK_ALG_END]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>MILK_ALG_END</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SOY_ALG_START</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SOY_ALG_START]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>SOY_ALG_START</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SOY_ALG_END</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SOY_ALG_END]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>SOY_ALG_END</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EGG_ALG_START</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EGG_ALG_START]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>EGG_ALG_START</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EGG_ALG_END</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EGG_ALG_END]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>EGG_ALG_END</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WHEAT_ALG_START</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[WHEAT_ALG_START]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>WHEAT_ALG_START</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WHEAT_ALG_END</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[WHEAT_ALG_END]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>WHEAT_ALG_END</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PEANUT_ALG_START</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PEANUT_ALG_START]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>PEANUT_ALG_START</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PEANUT_ALG_END</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PEANUT_ALG_END]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>PEANUT_ALG_END</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SESAME_ALG_START</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SESAME_ALG_START]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>SESAME_ALG_START</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SESAME_ALG_END</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SESAME_ALG_END]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>SESAME_ALG_END</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TREENUT_ALG_START</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TREENUT_ALG_START]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>TREENUT_ALG_START</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TREENUT_ALG_END</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TREENUT_ALG_END]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>TREENUT_ALG_END</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WALNUT_ALG_START</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[WALNUT_ALG_START]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>WALNUT_ALG_START</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WALNUT_ALG_END</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[WALNUT_ALG_END]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>WALNUT_ALG_END</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PECAN_ALG_START</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PECAN_ALG_START]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>PECAN_ALG_START</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PECAN_ALG_END</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PECAN_ALG_END]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>PECAN_ALG_END</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PISTACH_ALG_START</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PISTACH_ALG_START]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>PISTACH_ALG_START</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PISTACH_ALG_END</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PISTACH_ALG_END]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>PISTACH_ALG_END</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ALMOND_ALG_START</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ALMOND_ALG_START]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>ALMOND_ALG_START</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ALMOND_ALG_END</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ALMOND_ALG_END]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>ALMOND_ALG_END</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BRAZIL_ALG_START</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BRAZIL_ALG_START]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>BRAZIL_ALG_START</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BRAZIL_ALG_END</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BRAZIL_ALG_END]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>BRAZIL_ALG_END</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HAZELNUT_ALG_START</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[HAZELNUT_ALG_START]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>HAZELNUT_ALG_START</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HAZELNUT_ALG_END</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HAZELNUT_ALG_END]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>HAZELNUT_ALG_END</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CASHEW_ALG_START</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CASHEW_ALG_START]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>CASHEW_ALG_START</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CASHEW_ALG_END</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CASHEW_ALG_END]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>CASHEW_ALG_END</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ATOPIC_DERM_START</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ATOPIC_DERM_START]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>ATOPIC_DERM_START</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ATOPIC_DERM_END</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ATOPIC_DERM_END]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>ATOPIC_DERM_END</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ALLERGIC_RHINITIS_START</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ALLERGIC_RHINITIS_START]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>ALLERGIC_RHINITIS_START</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ALLERGIC_RHINITIS_END</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ALLERGIC_RHINITIS_END]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>ALLERGIC_RHINITIS_END</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ASTHMA_START</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ASTHMA_START]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>ASTHMA_START</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ASTHMA_END</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ASTHMA_END]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>ASTHMA_END</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FIRST_ASTHMARX</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FIRST_ASTHMARX]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>FIRST_ASTHMARX</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LAST_ASTHMARX</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LAST_ASTHMARX]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>LAST_ASTHMARX</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NUM_ASTHMARX</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NUM_ASTHMARX]</local-name>
+            <parent-name>[food-allergy-analysis-Zenodo.csv]</parent-name>
+            <remote-alias>NUM_ASTHMARX</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:ALMOND_ALG_START:qk]&quot;' value='Almond' />
+          <alias key='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:CASHEW_ALG_START:qk]&quot;' value='Cashew' />
+          <alias key='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:EGG_ALG_START:qk]&quot;' value='Egg' />
+          <alias key='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:FISH_ALG_START:qk]&quot;' value='Fish' />
+          <alias key='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:HAZELNUT_ALG_START:qk]&quot;' value='Hazelnut' />
+          <alias key='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:MILK_ALG_START:qk]&quot;' value='Milk' />
+          <alias key='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:PEANUT_ALG_START:qk]&quot;' value='Peanut' />
+          <alias key='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:PECAN_ALG_START:qk]&quot;' value='Pecan' />
+          <alias key='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:PISTACH_ALG_START:qk]&quot;' value='Pistachio' />
+          <alias key='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:SESAME_ALG_START:qk]&quot;' value='Sesame' />
+          <alias key='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:SHELLFISH_ALG_START:qk]&quot;' value='Shellfish' />
+          <alias key='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:SOY_ALG_START:qk]&quot;' value='Soy' />
+          <alias key='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:WALNUT_ALG_START:qk]&quot;' value='Walnut' />
+          <alias key='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:WHEAT_ALG_START:qk]&quot;' value='Wheat' />
+        </aliases>
+      </column>
+      <column caption='Age End Years' datatype='real' name='[AGE_END_YEARS]' role='measure' type='quantitative' />
+      <column caption='Age Start Years' datatype='real' name='[AGE_START_YEARS]' role='measure' type='quantitative' />
+      <column caption='Allergic Rhinitis End' datatype='string' name='[ALLERGIC_RHINITIS_END]' role='dimension' type='nominal' />
+      <column caption='Allergic Rhinitis Start' datatype='string' name='[ALLERGIC_RHINITIS_START]' role='dimension' type='nominal' />
+      <column caption='Almond Alg End' datatype='string' name='[ALMOND_ALG_END]' role='dimension' type='nominal' />
+      <column aggregation='CountD' caption='Almond Alg Start' datatype='real' name='[ALMOND_ALG_START]' role='measure' type='quantitative' />
+      <column caption='Asthma End' datatype='string' name='[ASTHMA_END]' role='dimension' type='nominal' />
+      <column caption='Asthma Start' datatype='string' name='[ASTHMA_START]' role='dimension' type='nominal' />
+      <column caption='Atopic Derm End' datatype='string' name='[ATOPIC_DERM_END]' role='dimension' type='nominal' />
+      <column caption='Atopic Derm Start' datatype='string' name='[ATOPIC_DERM_START]' role='dimension' type='nominal' />
+      <column caption='Atopic March Cohort' datatype='boolean' name='[ATOPIC_MARCH_COHORT]' role='dimension' type='nominal' />
+      <column caption='Birth Year' datatype='integer' name='[BIRTH_YEAR]' role='dimension' type='quantitative' />
+      <column caption='Brazil Alg End' datatype='string' name='[BRAZIL_ALG_END]' role='dimension' type='nominal' />
+      <column caption='Brazil Alg Start' datatype='string' name='[BRAZIL_ALG_START]' role='dimension' type='nominal' />
+      <column caption='Cashew Alg End' datatype='string' name='[CASHEW_ALG_END]' role='dimension' type='nominal' />
+      <column aggregation='CountD' caption='Cashew Alg Start' datatype='real' name='[CASHEW_ALG_START]' role='measure' type='quantitative' />
+      <column caption='Egg Alg End' datatype='string' name='[EGG_ALG_END]' role='dimension' type='nominal' />
+      <column aggregation='CountD' caption='Egg Alg Start' datatype='real' name='[EGG_ALG_START]' role='measure' type='quantitative' />
+      <column caption='Ethnicity Factor' datatype='string' name='[ETHNICITY_FACTOR]' role='dimension' type='nominal' />
+      <column caption='First Asthmarx' datatype='string' name='[FIRST_ASTHMARX]' role='dimension' type='nominal' />
+      <column caption='Fish Alg End' datatype='string' name='[FISH_ALG_END]' role='dimension' type='nominal' />
+      <column aggregation='CountD' caption='Fish Alg Start' datatype='real' name='[FISH_ALG_START]' role='measure' type='quantitative' />
+      <column caption='Gender Factor' datatype='string' name='[GENDER_FACTOR]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;S0 - Male&quot;' value='Asthma Patients- Male' />
+          <alias key='&quot;S1 - Female&quot;' value='Asthma Patients- Female' />
+        </aliases>
+      </column>
+      <column caption='Hazelnut Alg End' datatype='string' name='[HAZELNUT_ALG_END]' role='dimension' type='nominal' />
+      <column aggregation='CountD' caption='Hazelnut Alg Start' datatype='real' name='[HAZELNUT_ALG_START]' role='measure' type='quantitative' />
+      <column caption='Last Asthmarx' datatype='string' name='[LAST_ASTHMARX]' role='dimension' type='nominal' />
+      <column caption='Milk Alg End' datatype='string' name='[MILK_ALG_END]' role='dimension' type='nominal' />
+      <column aggregation='CountD' caption='Milk Alg Start' datatype='real' name='[MILK_ALG_START]' role='measure' type='quantitative' />
+      <column caption='Num Asthmarx' datatype='string' name='[NUM_ASTHMARX]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Payer Factor' datatype='string' name='[PAYER_FACTOR]' role='dimension' type='nominal' />
+      <column caption='Peanut Alg End' datatype='string' name='[PEANUT_ALG_END]' role='dimension' type='nominal' />
+      <column aggregation='CountD' caption='Peanut Alg Start' datatype='real' name='[PEANUT_ALG_START]' role='measure' type='quantitative' />
+      <column caption='Pecan Alg End' datatype='string' name='[PECAN_ALG_END]' role='dimension' type='nominal' />
+      <column aggregation='CountD' caption='Pecan Alg Start' datatype='real' name='[PECAN_ALG_START]' role='measure' type='quantitative' />
+      <column caption='Pistach Alg End' datatype='string' name='[PISTACH_ALG_END]' role='dimension' type='nominal' />
+      <column aggregation='CountD' caption='Pistach Alg Start' datatype='real' name='[PISTACH_ALG_START]' role='measure' type='quantitative' />
+      <column caption='Race Factor' datatype='string' name='[RACE_FACTOR]' role='dimension' type='nominal' />
+      <column caption='Sesame Alg End' datatype='string' name='[SESAME_ALG_END]' role='dimension' type='nominal' />
+      <column aggregation='CountD' caption='Sesame Alg Start' datatype='real' name='[SESAME_ALG_START]' role='measure' type='quantitative' />
+      <column caption='Shellfish Alg End' datatype='string' name='[SHELLFISH_ALG_END]' role='dimension' type='nominal' />
+      <column aggregation='CountD' caption='Shellfish Alg Start' datatype='real' name='[SHELLFISH_ALG_START]' role='measure' type='quantitative' />
+      <column caption='Soy Alg End' datatype='string' name='[SOY_ALG_END]' role='dimension' type='nominal' />
+      <column aggregation='CountD' caption='Soy Alg Start' datatype='real' name='[SOY_ALG_START]' role='measure' type='quantitative' />
+      <column caption='Subject Id' datatype='integer' name='[SUBJECT_ID]' role='dimension' type='ordinal' />
+      <column caption='Treenut Alg End' datatype='string' name='[TREENUT_ALG_END]' role='dimension' type='nominal' />
+      <column aggregation='CountD' caption='Treenut Alg Start' datatype='real' name='[TREENUT_ALG_START]' role='measure' type='quantitative' />
+      <column caption='Walnut Alg End' datatype='string' name='[WALNUT_ALG_END]' role='dimension' type='nominal' />
+      <column aggregation='CountD' caption='Walnut Alg Start' datatype='real' name='[WALNUT_ALG_START]' role='measure' type='quantitative' />
+      <column caption='Wheat Alg End' datatype='string' name='[WHEAT_ALG_END]' role='dimension' type='nominal' />
+      <column aggregation='CountD' caption='Wheat Alg Start' datatype='real' name='[WHEAT_ALG_START]' role='measure' type='quantitative' />
+      <column-instance column='[ALMOND_ALG_START]' derivation='Count' name='[cnt:ALMOND_ALG_START:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CASHEW_ALG_START]' derivation='Count' name='[cnt:CASHEW_ALG_START:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[EGG_ALG_START]' derivation='Count' name='[cnt:EGG_ALG_START:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[FISH_ALG_START]' derivation='Count' name='[cnt:FISH_ALG_START:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[HAZELNUT_ALG_START]' derivation='Count' name='[cnt:HAZELNUT_ALG_START:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[MILK_ALG_START]' derivation='Count' name='[cnt:MILK_ALG_START:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[PEANUT_ALG_START]' derivation='Count' name='[cnt:PEANUT_ALG_START:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[PECAN_ALG_START]' derivation='Count' name='[cnt:PECAN_ALG_START:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[PISTACH_ALG_START]' derivation='Count' name='[cnt:PISTACH_ALG_START:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[SESAME_ALG_START]' derivation='Count' name='[cnt:SESAME_ALG_START:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[SHELLFISH_ALG_START]' derivation='Count' name='[cnt:SHELLFISH_ALG_START:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[SOY_ALG_START]' derivation='Count' name='[cnt:SOY_ALG_START:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[TREENUT_ALG_START]' derivation='Count' name='[cnt:TREENUT_ALG_START:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[WALNUT_ALG_START]' derivation='Count' name='[cnt:WALNUT_ALG_START:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[WHEAT_ALG_START]' derivation='Count' name='[cnt:WHEAT_ALG_START:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[GENDER_FACTOR]' derivation='None' name='[none:GENDER_FACTOR:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.320513' measure-ordering='alphabetic' measure-percentage='0.679487' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:GENDER_FACTOR:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;S0 - Male&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;S1 - Female&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:WALNUT_ALG_START:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:PEANUT_ALG_START:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:SOY_ALG_START:qk]&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:PECAN_ALG_START:qk]&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:CASHEW_ALG_START:qk]&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:FISH_ALG_START:qk]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:MILK_ALG_START:qk]&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:WHEAT_ALG_START:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:HAZELNUT_ALG_START:qk]&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:TREENUT_ALG_START:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:ALMOND_ALG_START:qk]&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:SESAME_ALG_START:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:EGG_ALG_START:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:PISTACH_ALG_START:qk]&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:SHELLFISH_ALG_START:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <filter class='categorical' column='[NUM_ASTHMARX]' filter-group='2'>
+        <groupfilter from='&quot;1&quot;' function='range' level='[NUM_ASTHMARX]' to='&quot;98&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+    </datasource>
+    <datasource caption='food_ingredients_dataset_Modified' inline='true' name='federated.1ptywgn1g1ei9d13brzzd0xjkcbv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='food_ingredients_dataset_Modified' name='textscan.1pemoz01mgs5kk12rrrxe19e8qv6'>
+            <connection class='textscan' directory='C:/Users/gokul' filename='food_ingredients_dataset_Modified.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1pemoz01mgs5kk12rrrxe19e8qv6' name='food_ingredients_dataset_Modified.csv' table='[food_ingredients_dataset_Modified#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Unnamed' ordinal='0' />
+            <column datatype='string' name='Title' ordinal='1' />
+            <column datatype='string' name='Image_Name' ordinal='2' />
+            <column datatype='integer' name='cows milk' ordinal='3' />
+            <column datatype='integer' name='eggs' ordinal='4' />
+            <column datatype='integer' name='tree nuts' ordinal='5' />
+            <column datatype='integer' name='peanuts' ordinal='6' />
+            <column datatype='integer' name='shellfish' ordinal='7' />
+            <column datatype='integer' name='wheat' ordinal='8' />
+            <column datatype='integer' name='soy' ordinal='9' />
+            <column datatype='integer' name='fish' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[food_ingredients_dataset_Modified.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unnamed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Unnamed]</local-name>
+            <parent-name>[food_ingredients_dataset_Modified.csv]</parent-name>
+            <remote-alias>Unnamed</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Title]</local-name>
+            <parent-name>[food_ingredients_dataset_Modified.csv]</parent-name>
+            <remote-alias>Title</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Image_Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Image_Name]</local-name>
+            <parent-name>[food_ingredients_dataset_Modified.csv]</parent-name>
+            <remote-alias>Image_Name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cows milk</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cows milk]</local-name>
+            <parent-name>[food_ingredients_dataset_Modified.csv]</parent-name>
+            <remote-alias>cows milk</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>eggs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[eggs]</local-name>
+            <parent-name>[food_ingredients_dataset_Modified.csv]</parent-name>
+            <remote-alias>eggs</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tree nuts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tree nuts]</local-name>
+            <parent-name>[food_ingredients_dataset_Modified.csv]</parent-name>
+            <remote-alias>tree nuts</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>peanuts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[peanuts]</local-name>
+            <parent-name>[food_ingredients_dataset_Modified.csv]</parent-name>
+            <remote-alias>peanuts</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shellfish</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[shellfish]</local-name>
+            <parent-name>[food_ingredients_dataset_Modified.csv]</parent-name>
+            <remote-alias>shellfish</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wheat</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[wheat]</local-name>
+            <parent-name>[food_ingredients_dataset_Modified.csv]</parent-name>
+            <remote-alias>wheat</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>soy</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[soy]</local-name>
+            <parent-name>[food_ingredients_dataset_Modified.csv]</parent-name>
+            <remote-alias>soy</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fish</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fish]</local-name>
+            <parent-name>[food_ingredients_dataset_Modified.csv]</parent-name>
+            <remote-alias>fish</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.1ptywgn1g1ei9d13brzzd0xjkcbv].[sum:cows milk:qk]&quot;' value='Milk' />
+        </aliases>
+      </column>
+      <column caption='Image Name' datatype='string' name='[Image_Name]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Cows Milk' datatype='integer' name='[cows milk]' role='measure' type='quantitative' />
+      <column caption='Eggs' datatype='integer' name='[eggs]' role='measure' type='quantitative' />
+      <column caption='Fish' datatype='integer' name='[fish]' role='measure' type='quantitative' />
+      <column caption='Peanuts' datatype='integer' name='[peanuts]' role='measure' type='quantitative' />
+      <column caption='Shellfish' datatype='integer' name='[shellfish]' role='measure' type='quantitative' />
+      <column caption='Soy' datatype='integer' name='[soy]' role='measure' type='quantitative' />
+      <column caption='Tree Nuts' datatype='integer' name='[tree nuts]' role='measure' type='quantitative' />
+      <column caption='Wheat' datatype='integer' name='[wheat]' role='measure' type='quantitative' />
+      <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[cows milk]' derivation='Sum' name='[sum:cows milk:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[eggs]' derivation='Sum' name='[sum:eggs:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[fish]' derivation='Sum' name='[sum:fish:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[peanuts]' derivation='Sum' name='[sum:peanuts:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[shellfish]' derivation='Sum' name='[sum:shellfish:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[soy]' derivation='Sum' name='[sum:soy:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[tree nuts]' derivation='Sum' name='[sum:tree nuts:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[wheat]' derivation='Sum' name='[sum:wheat:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.351852' measure-ordering='alphabetic' measure-percentage='0.648148' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1ptywgn1g1ei9d13brzzd0xjkcbv].[sum:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1ptywgn1g1ei9d13brzzd0xjkcbv].[sum:tree nuts:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1ptywgn1g1ei9d13brzzd0xjkcbv].[sum:eggs:qk]&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.1ptywgn1g1ei9d13brzzd0xjkcbv].[sum:fish:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1ptywgn1g1ei9d13brzzd0xjkcbv].[sum:shellfish:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1ptywgn1g1ei9d13brzzd0xjkcbv].[sum:wheat:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.1ptywgn1g1ei9d13brzzd0xjkcbv].[sum:soy:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1ptywgn1g1ei9d13brzzd0xjkcbv].[sum:cows milk:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.1ptywgn1g1ei9d13brzzd0xjkcbv].[sum:peanuts:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Allergens in Food Recipe'>
+      <layout-options>
+        <caption>
+          <formatted-text>
+            <run fontcolor='#000000' fontsize='11'>Milk, Wheat,Eggs and Tree nuts are the most common allergen found in the food recipe dataset</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='food_ingredients_dataset_Modified' name='federated.1ptywgn1g1ei9d13brzzd0xjkcbv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ptywgn1g1ei9d13brzzd0xjkcbv'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Cows Milk' datatype='integer' name='[cows milk]' role='measure' type='quantitative' />
+            <column caption='Eggs' datatype='integer' name='[eggs]' role='measure' type='quantitative' />
+            <column caption='Fish' datatype='integer' name='[fish]' role='measure' type='quantitative' />
+            <column caption='Peanuts' datatype='integer' name='[peanuts]' role='measure' type='quantitative' />
+            <column caption='Shellfish' datatype='integer' name='[shellfish]' role='measure' type='quantitative' />
+            <column caption='Soy' datatype='integer' name='[soy]' role='measure' type='quantitative' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[cows milk]' derivation='Sum' name='[sum:cows milk:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[eggs]' derivation='Sum' name='[sum:eggs:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[fish]' derivation='Sum' name='[sum:fish:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[peanuts]' derivation='Sum' name='[sum:peanuts:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[shellfish]' derivation='Sum' name='[sum:shellfish:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[soy]' derivation='Sum' name='[sum:soy:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[tree nuts]' derivation='Sum' name='[sum:tree nuts:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[wheat]' derivation='Sum' name='[sum:wheat:qk]' pivot='key' type='quantitative' />
+            <column caption='Tree Nuts' datatype='integer' name='[tree nuts]' role='measure' type='quantitative' />
+            <column caption='Wheat' datatype='integer' name='[wheat]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ptywgn1g1ei9d13brzzd0xjkcbv].[:Measure Names]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ptywgn1g1ei9d13brzzd0xjkcbv].[sum:cows milk:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ptywgn1g1ei9d13brzzd0xjkcbv].[sum:eggs:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ptywgn1g1ei9d13brzzd0xjkcbv].[sum:fish:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ptywgn1g1ei9d13brzzd0xjkcbv].[sum:peanuts:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ptywgn1g1ei9d13brzzd0xjkcbv].[sum:shellfish:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ptywgn1g1ei9d13brzzd0xjkcbv].[sum:soy:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ptywgn1g1ei9d13brzzd0xjkcbv].[sum:tree nuts:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ptywgn1g1ei9d13brzzd0xjkcbv].[sum:wheat:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1ptywgn1g1ei9d13brzzd0xjkcbv].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1ptywgn1g1ei9d13brzzd0xjkcbv].[sum:Number of Records:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1ptywgn1g1ei9d13brzzd0xjkcbv].[sum:cows milk:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1ptywgn1g1ei9d13brzzd0xjkcbv].[sum:wheat:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1ptywgn1g1ei9d13brzzd0xjkcbv].[sum:eggs:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1ptywgn1g1ei9d13brzzd0xjkcbv].[sum:tree nuts:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1ptywgn1g1ei9d13brzzd0xjkcbv].[sum:soy:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1ptywgn1g1ei9d13brzzd0xjkcbv].[sum:shellfish:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1ptywgn1g1ei9d13brzzd0xjkcbv].[sum:peanuts:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1ptywgn1g1ei9d13brzzd0xjkcbv].[sum:fish:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1ptywgn1g1ei9d13brzzd0xjkcbv].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1ptywgn1g1ei9d13brzzd0xjkcbv].[Multiple Values]' scope='cols' value='Count' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ptywgn1g1ei9d13brzzd0xjkcbv].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1ptywgn1g1ei9d13brzzd0xjkcbv].[:Measure Names]</rows>
+        <cols>[federated.1ptywgn1g1ei9d13brzzd0xjkcbv].[Multiple Values]</cols>
+      </table>
+      <simple-id uuid='{D7131E6D-09C9-4741-9138-EBF542B8E316}' />
+    </worksheet>
+    <worksheet name='Asthma Allergens'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#555555'>Most Common food allergens of Asthma</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run fontcolor='#000000' fontsize='11'>The most common allergic foods responsible for the development of Asthma are Peanut, Milk, Egg, Shellfish and Soy</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='food-allergy-analysis-Zenodo' name='federated.1c73yi90ippcrv0zmobg20kutg9n' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1c73yi90ippcrv0zmobg20kutg9n'>
+            <column aggregation='CountD' caption='Almond Alg Start' datatype='real' name='[ALMOND_ALG_START]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='Cashew Alg Start' datatype='real' name='[CASHEW_ALG_START]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='Egg Alg Start' datatype='real' name='[EGG_ALG_START]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='Fish Alg Start' datatype='real' name='[FISH_ALG_START]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='Hazelnut Alg Start' datatype='real' name='[HAZELNUT_ALG_START]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='Milk Alg Start' datatype='real' name='[MILK_ALG_START]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='Peanut Alg Start' datatype='real' name='[PEANUT_ALG_START]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='Pecan Alg Start' datatype='real' name='[PECAN_ALG_START]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='Pistach Alg Start' datatype='real' name='[PISTACH_ALG_START]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='Sesame Alg Start' datatype='real' name='[SESAME_ALG_START]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='Shellfish Alg Start' datatype='real' name='[SHELLFISH_ALG_START]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='Soy Alg Start' datatype='real' name='[SOY_ALG_START]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='Treenut Alg Start' datatype='real' name='[TREENUT_ALG_START]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='Walnut Alg Start' datatype='real' name='[WALNUT_ALG_START]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='Wheat Alg Start' datatype='real' name='[WHEAT_ALG_START]' role='measure' type='quantitative' />
+            <column-instance column='[ALMOND_ALG_START]' derivation='Count' name='[cnt:ALMOND_ALG_START:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CASHEW_ALG_START]' derivation='Count' name='[cnt:CASHEW_ALG_START:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[EGG_ALG_START]' derivation='Count' name='[cnt:EGG_ALG_START:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[FISH_ALG_START]' derivation='Count' name='[cnt:FISH_ALG_START:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[HAZELNUT_ALG_START]' derivation='Count' name='[cnt:HAZELNUT_ALG_START:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MILK_ALG_START]' derivation='Count' name='[cnt:MILK_ALG_START:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PEANUT_ALG_START]' derivation='Count' name='[cnt:PEANUT_ALG_START:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PECAN_ALG_START]' derivation='Count' name='[cnt:PECAN_ALG_START:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PISTACH_ALG_START]' derivation='Count' name='[cnt:PISTACH_ALG_START:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SESAME_ALG_START]' derivation='Count' name='[cnt:SESAME_ALG_START:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SHELLFISH_ALG_START]' derivation='Count' name='[cnt:SHELLFISH_ALG_START:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SOY_ALG_START]' derivation='Count' name='[cnt:SOY_ALG_START:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TREENUT_ALG_START]' derivation='Count' name='[cnt:TREENUT_ALG_START:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[WALNUT_ALG_START]' derivation='Count' name='[cnt:WALNUT_ALG_START:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[WHEAT_ALG_START]' derivation='Count' name='[cnt:WHEAT_ALG_START:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1c73yi90ippcrv0zmobg20kutg9n].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:PEANUT_ALG_START:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:MILK_ALG_START:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:EGG_ALG_START:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:SHELLFISH_ALG_START:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:SOY_ALG_START:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:FISH_ALG_START:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:WHEAT_ALG_START:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:SESAME_ALG_START:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:WALNUT_ALG_START:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:CASHEW_ALG_START:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:ALMOND_ALG_START:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:PISTACH_ALG_START:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:PECAN_ALG_START:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:HAZELNUT_ALG_START:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1c73yi90ippcrv0zmobg20kutg9n].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:PEANUT_ALG_START:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:MILK_ALG_START:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:EGG_ALG_START:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:SHELLFISH_ALG_START:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:SOY_ALG_START:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:FISH_ALG_START:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:WHEAT_ALG_START:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:SESAME_ALG_START:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:WALNUT_ALG_START:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:CASHEW_ALG_START:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:ALMOND_ALG_START:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:PISTACH_ALG_START:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:PECAN_ALG_START:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:HAZELNUT_ALG_START:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:TREENUT_ALG_START:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1c73yi90ippcrv0zmobg20kutg9n].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1c73yi90ippcrv0zmobg20kutg9n].[Multiple Values]' scope='cols' value='Count' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1c73yi90ippcrv0zmobg20kutg9n].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#69aaa5' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1c73yi90ippcrv0zmobg20kutg9n].[:Measure Names]</rows>
+        <cols>[federated.1c73yi90ippcrv0zmobg20kutg9n].[Multiple Values]</cols>
+      </table>
+      <simple-id uuid='{575284FE-A623-4A40-BF43-524461610092}' />
+    </worksheet>
+    <worksheet name='Asthma Allergens by Gender'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Most Common Food Allergens by Gender </run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run fontcolor='#000000' fontsize='11'>There is no difference in the order of common allergens between Male and Female asthma patients. No food allergy is more prone to male than female and vice versa.</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='food-allergy-analysis-Zenodo' name='federated.1c73yi90ippcrv0zmobg20kutg9n' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1c73yi90ippcrv0zmobg20kutg9n'>
+            <column aggregation='CountD' caption='Almond Alg Start' datatype='real' name='[ALMOND_ALG_START]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='Cashew Alg Start' datatype='real' name='[CASHEW_ALG_START]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='Egg Alg Start' datatype='real' name='[EGG_ALG_START]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='Fish Alg Start' datatype='real' name='[FISH_ALG_START]' role='measure' type='quantitative' />
+            <column caption='Gender Factor' datatype='string' name='[GENDER_FACTOR]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;S0 - Male&quot;' value='Asthma Patients- Male' />
+                <alias key='&quot;S1 - Female&quot;' value='Asthma Patients- Female' />
+              </aliases>
+            </column>
+            <column aggregation='CountD' caption='Hazelnut Alg Start' datatype='real' name='[HAZELNUT_ALG_START]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='Milk Alg Start' datatype='real' name='[MILK_ALG_START]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='Peanut Alg Start' datatype='real' name='[PEANUT_ALG_START]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='Pecan Alg Start' datatype='real' name='[PECAN_ALG_START]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='Pistach Alg Start' datatype='real' name='[PISTACH_ALG_START]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='Sesame Alg Start' datatype='real' name='[SESAME_ALG_START]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='Shellfish Alg Start' datatype='real' name='[SHELLFISH_ALG_START]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='Soy Alg Start' datatype='real' name='[SOY_ALG_START]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='Walnut Alg Start' datatype='real' name='[WALNUT_ALG_START]' role='measure' type='quantitative' />
+            <column aggregation='CountD' caption='Wheat Alg Start' datatype='real' name='[WHEAT_ALG_START]' role='measure' type='quantitative' />
+            <column-instance column='[ALMOND_ALG_START]' derivation='Count' name='[cnt:ALMOND_ALG_START:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CASHEW_ALG_START]' derivation='Count' name='[cnt:CASHEW_ALG_START:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[EGG_ALG_START]' derivation='Count' name='[cnt:EGG_ALG_START:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[FISH_ALG_START]' derivation='Count' name='[cnt:FISH_ALG_START:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[HAZELNUT_ALG_START]' derivation='Count' name='[cnt:HAZELNUT_ALG_START:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MILK_ALG_START]' derivation='Count' name='[cnt:MILK_ALG_START:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PEANUT_ALG_START]' derivation='Count' name='[cnt:PEANUT_ALG_START:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PECAN_ALG_START]' derivation='Count' name='[cnt:PECAN_ALG_START:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PISTACH_ALG_START]' derivation='Count' name='[cnt:PISTACH_ALG_START:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SESAME_ALG_START]' derivation='Count' name='[cnt:SESAME_ALG_START:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SHELLFISH_ALG_START]' derivation='Count' name='[cnt:SHELLFISH_ALG_START:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SOY_ALG_START]' derivation='Count' name='[cnt:SOY_ALG_START:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[WALNUT_ALG_START]' derivation='Count' name='[cnt:WALNUT_ALG_START:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[WHEAT_ALG_START]' derivation='Count' name='[cnt:WHEAT_ALG_START:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GENDER_FACTOR]' derivation='None' name='[none:GENDER_FACTOR:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1c73yi90ippcrv0zmobg20kutg9n].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:ALMOND_ALG_START:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:CASHEW_ALG_START:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:EGG_ALG_START:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:FISH_ALG_START:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:HAZELNUT_ALG_START:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:MILK_ALG_START:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:PEANUT_ALG_START:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:PECAN_ALG_START:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:PISTACH_ALG_START:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:SESAME_ALG_START:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:SHELLFISH_ALG_START:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:SOY_ALG_START:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:WALNUT_ALG_START:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:WHEAT_ALG_START:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1c73yi90ippcrv0zmobg20kutg9n].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:PEANUT_ALG_START:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:MILK_ALG_START:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:EGG_ALG_START:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:SHELLFISH_ALG_START:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:SOY_ALG_START:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:FISH_ALG_START:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:WHEAT_ALG_START:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:SESAME_ALG_START:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:WALNUT_ALG_START:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:CASHEW_ALG_START:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:ALMOND_ALG_START:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:PISTACH_ALG_START:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:PECAN_ALG_START:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1c73yi90ippcrv0zmobg20kutg9n].[cnt:HAZELNUT_ALG_START:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.1c73yi90ippcrv0zmobg20kutg9n].[none:GENDER_FACTOR:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:GENDER_FACTOR:nk]' member='&quot;S0 - Male&quot;' />
+              <groupfilter function='member' level='[none:GENDER_FACTOR:nk]' member='&quot;S1 - Female&quot;' />
+            </groupfilter>
+          </filter>
+          <natural-sort column='[federated.1c73yi90ippcrv0zmobg20kutg9n].[none:GENDER_FACTOR:nk]' direction='DESC' />
+          <slices>
+            <column>[federated.1c73yi90ippcrv0zmobg20kutg9n].[none:GENDER_FACTOR:nk]</column>
+            <column>[federated.1c73yi90ippcrv0zmobg20kutg9n].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1c73yi90ippcrv0zmobg20kutg9n].[Multiple Values]' scope='rows' value='Count' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1c73yi90ippcrv0zmobg20kutg9n].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1c73yi90ippcrv0zmobg20kutg9n].[Multiple Values]</rows>
+        <cols>([federated.1c73yi90ippcrv0zmobg20kutg9n].[none:GENDER_FACTOR:nk] / [federated.1c73yi90ippcrv0zmobg20kutg9n].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{6EF9AF49-7C37-4CE3-91C0-EE145D63FB9A}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Food Allergen Dashboard '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Food Triggers of Asthma</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='17' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98142' id='20' param='vert' type='layout-flow' w='99034' x='483' y='929'>
+            <zone h='5691' id='21' type='title' w='99034' x='483' y='929'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='92451' id='18' type='layout-basic' w='99034' x='483' y='6620' />
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='42625' id='16' name='Allergens in Food Recipe' w='41521' x='48884' y='9640' />
+        <zone h='42276' id='3' name='Asthma Allergens' w='44719' x='3440' y='9292' />
+        <zone h='41812' id='5' name='Asthma Allergens by Gender' w='88111' x='4466' y='53310' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true'>Food Triggers of Asthma</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='950' minheight='950' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='55' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98142' id='54' param='vert' type='layout-flow' w='99034' x='483' y='929'>
+                <zone h='5691' id='21' type='title' w='99034' x='483' y='929'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42276' id='3' is-fixed='true' name='Asthma Allergens' w='44719' x='3440' y='9292'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42625' id='16' is-fixed='true' name='Allergens in Food Recipe' w='41521' x='48884' y='9640'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41812' id='5' is-fixed='true' name='Asthma Allergens by Gender' w='88111' x='4466' y='53310'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{98D5EA7D-6296-4F83-A27C-175CE7DFDE01}' />
+    </dashboard>
+    <dashboard name='Food Allergen Story' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#499894' fontname='Tableau Light' fontsize='15'>Most Common food allergens of Asthma</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='story-point-caption'>
+          <format attr='width' value='583' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98142' id='1' param='vert' removable='false' type='layout-flow' w='99034' x='483' y='929'>
+            <zone h='4065' id='3' type='title' w='99034' x='483' y='929' />
+            <zone fixed-size='112' h='13008' id='4' is-fixed='true' paired-zone-id='5' removable='false' type='flipboard-nav' w='99034' x='483' y='4994' />
+            <zone h='81069' id='5' paired-zone-id='4' removable='false' type='flipboard' w='99034' x='483' y='18002'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='The most common allergic foods responsible for the development of Asthma are Peanut, Milk, Egg, Shellfish and Soy' captured-sheet='Asthma Allergens' id='1' />
+                  <story-point caption='There is no difference in the order of common allergens between Male and Female asthma patients. No food allergy is more prone to male than female and vice versa.' captured-sheet='Asthma Allergens by Gender' id='2' />
+                  <story-point caption='Milk, Wheat, Eggs and Tree nuts  are the most common allergen found in the food recipe dataset' captured-sheet='Allergens in Food Recipe' id='3' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{140274FA-6F3C-406C-B867-6571701E1DAC}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+    <window class='worksheet' maximized='true' name='Asthma Allergens'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='marks' />
+            <card type='filters' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='92'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1c73yi90ippcrv0zmobg20kutg9n].[:Measure Names]</field>
+            <field>[federated.1c73yi90ippcrv0zmobg20kutg9n].[none:ALMOND_ALG_START:nk]</field>
+            <field>[federated.1c73yi90ippcrv0zmobg20kutg9n].[none:CASHEW_ALG_START:nk]</field>
+            <field>[federated.1c73yi90ippcrv0zmobg20kutg9n].[none:EGG_ALG_START:nk]</field>
+            <field>[federated.1c73yi90ippcrv0zmobg20kutg9n].[none:FISH_ALG_START:nk]</field>
+            <field>[federated.1c73yi90ippcrv0zmobg20kutg9n].[none:HAZELNUT_ALG_START:nk]</field>
+            <field>[federated.1c73yi90ippcrv0zmobg20kutg9n].[none:MILK_ALG_START:nk]</field>
+            <field>[federated.1c73yi90ippcrv0zmobg20kutg9n].[none:NUM_ASTHMARX:nk]</field>
+            <field>[federated.1c73yi90ippcrv0zmobg20kutg9n].[none:PEANUT_ALG_START:nk]</field>
+            <field>[federated.1c73yi90ippcrv0zmobg20kutg9n].[none:PECAN_ALG_START:nk]</field>
+            <field>[federated.1c73yi90ippcrv0zmobg20kutg9n].[none:PISTACH_ALG_START:nk]</field>
+            <field>[federated.1c73yi90ippcrv0zmobg20kutg9n].[none:SESAME_ALG_START:nk]</field>
+            <field>[federated.1c73yi90ippcrv0zmobg20kutg9n].[none:SHELLFISH_ALG_START:nk]</field>
+            <field>[federated.1c73yi90ippcrv0zmobg20kutg9n].[none:SOY_ALG_START:nk]</field>
+            <field>[federated.1c73yi90ippcrv0zmobg20kutg9n].[none:TREENUT_ALG_START:nk]</field>
+            <field>[federated.1c73yi90ippcrv0zmobg20kutg9n].[none:WALNUT_ALG_START:nk]</field>
+            <field>[federated.1c73yi90ippcrv0zmobg20kutg9n].[none:WHEAT_ALG_START:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{474A954F-2667-45C9-8D8F-BD6538D8D832}' />
+    </window>
+    <window class='worksheet' name='Asthma Allergens by Gender'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='92'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1c73yi90ippcrv0zmobg20kutg9n].[:Measure Names]</field>
+            <field>[federated.1c73yi90ippcrv0zmobg20kutg9n].[none:GENDER_FACTOR:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{AD7C0006-954C-40F7-BA0C-BBD29B4F0958}' />
+    </window>
+    <window class='worksheet' name='Allergens in Food Recipe'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='92'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ptywgn1g1ei9d13brzzd0xjkcbv].[:Measure Names]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D00417E7-EE71-42EB-86B4-DF00E4AA59AD}' />
+    </window>
+    <window class='dashboard' name='Food Allergen Dashboard '>
+      <viewpoints>
+        <viewpoint name='Allergens in Food Recipe'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Asthma Allergens'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Asthma Allergens by Gender'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='18' />
+      <simple-id uuid='{17015500-83EF-4121-A2C7-620E3957EE78}' />
+    </window>
+    <window class='dashboard' name='Food Allergen Story'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{093A8202-D8BE-470E-8165-32AF7BC47FF7}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Allergens in Food Recipe' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Asthma Allergens' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Asthma Allergens by Gender' width='192'>
+      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
+      5lNCFw3pKbEAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Food Allergen Dashboard ' width='192'>
+      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
+      L1rHElo86gAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Food Allergen Story' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
